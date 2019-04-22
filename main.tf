@@ -14,6 +14,13 @@ resource "azurerm_resource_group" "rg" {
     location = "eastus"
 }
 
+# Create a resource group
+resource "azurerm_resource_group" "rgvar" {
+    name     = "${var.prefix}TFRGVar"
+    location = "${var.location}"
+    tags     = "${var.tags}"
+}
+
 # Create a new resource group
 resource "azurerm_resource_group" "rg1" {
     name     = "RaghuTFResourceGroup1"
