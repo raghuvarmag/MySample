@@ -6,5 +6,5 @@ provider "azurerm" {
 # Create a new resource group
 resource "azurerm_resource_group" "rg" {
     name     = "myTFResourceGroupDevNew1235"
-    location = "Europe"
+    location = "WestIndia"
 }
